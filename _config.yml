@@ -1,0 +1,39 @@
+# Site settings
+name: Imageinate Psi
+title: Imaginate Psi | Atención de la Salud Mental
+description: Imaginate Psi | Atención de la Salud Mental
+url: 
+baseurl: ''
+email: 
+cover: https://mrfacundo.github.io/img/og.png
+logo: https://mrfacundo.github.io/img/emojis/technologist.png
+social:
+  - title: email
+    url: mailto:fdsadsa
+
+# Build settings
+markdown: kramdown
+
+exclude:
+  - 'Gemfile'
+  - 'Gemfile.lock'
+  - '*.gemspec'
+  - 'README.md'
+  - 'node_modules'
+  - 'build'
+  - 'gulpfile.js'
+  - 'package.json'
+
+keep_files:
+  - 'CNAME'
+  - '.git'
+  - '.gitignore'
+
+plugins_dir:
+  - jekyll-minifier
+  - jekyll-sitemap
+
+picture:
+  source: img/
+  output: resized_images/
+  suppress_warnings: true

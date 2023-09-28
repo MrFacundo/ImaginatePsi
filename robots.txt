@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://mrfacundo.github.io/sitemap.xml
