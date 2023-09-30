@@ -2,14 +2,9 @@
   <div class="section__title">team</div>
   <div class="section__content">
     <div class="team">
-      {% for category in site.data.team %}
-      <div class="team__category">
-        <div class="team__category__label">{{ category.label }}</div>
-        <ul>
-          {% for item in category.items %}
-          <li class="team__category__item">{{ item }}</li>
-          {% endfor %}
-        </ul>
+      {% for member in site.data.team %}
+      <div class="team__member">
+        <div class="team__member__name">{{ member.name }}</div>
       </div>
       {% endfor %}
     </div>
