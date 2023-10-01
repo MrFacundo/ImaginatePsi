@@ -8,6 +8,7 @@
     justify-content: space-between;
     position: relative;
     margin: 0;
+    place-self: end;
 
     figcaption {
       width: 50%;
@@ -47,14 +48,16 @@
       }
     }
     .image-container {
-      width: 50%;
+      width: 40%;
       position: relative;
+      height: 90%;
+      place-self: self-end;
 
       img {
-        height: 100%;
         width: auto;
         z-index: 2;
         position: relative;
+        max-height: 100%;
       }
       &::before {
         display: block;
@@ -74,28 +77,28 @@
     }
 
     @include desktop {
-		figcaption {
-		  width: 40%;
-		  padding: 0 10px;
-		  h1 {
-			font-size: 36px;
-			line-height: initial;
-		  }
-		  em {
-			font-size: 22px;
-		  }
-		  p {
-			font-size: 18px;
-		  }
-		  button {
-			font-size: 18px;
-			padding: 16px;
-		  }
-		}
-		.image-container {
-		  width: 60%;
-		}
-	  }
+      figcaption {
+        width: 40%;
+        padding: 0 10px;
+        h1 {
+          font-size: 36px;
+          line-height: initial;
+        }
+        em {
+          font-size: 22px;
+        }
+        p {
+          font-size: 18px;
+        }
+        button {
+          font-size: 18px;
+          padding: 16px;
+        }
+      }
+      .image-container {
+        width: 60%;
+      }
+    }
 
     @include tablet {
       flex-direction: column-reverse;
@@ -113,7 +116,8 @@
         }
       }
       .image-container {
-        width: 100%;
+        width: 70%;
+        place-self: center;
       }
     }
 
@@ -132,6 +136,9 @@
           font-size: 12px;
           padding: 10px;
         }
+      }
+      .image-container {
+        width: 90%;
       }
     }
   }
