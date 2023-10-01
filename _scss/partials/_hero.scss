@@ -1,0 +1,138 @@
+.hero {
+  background: $ligth-pink;
+  height: 100vh;
+  overflow-x: hidden;
+
+  figure {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin: 0;
+
+    figcaption {
+      width: 50%;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      min-height: 100%;
+      position: relative;
+      z-index: 2;
+
+      div:first-child {
+        display: block;
+      }
+      h1 {
+        font-size: 46px;
+      }
+      em {
+        font-size: 32px;
+        font-weight: 300;
+      }
+      p {
+        font-size: 26px;
+      }
+      button {
+        background: $orange;
+        color: $white;
+        padding: 20px;
+        border-radius: 50px;
+        border: none;
+        margin-bottom: 10px;
+        display: inline-block;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 20px;
+        letter-spacing: 0.03em;
+        cursor: pointer;
+      }
+    }
+    .image-container {
+      width: 50%;
+      position: relative;
+
+      img {
+        height: 100%;
+        width: auto;
+        z-index: 2;
+        position: relative;
+      }
+      &::before {
+        display: block;
+        position: absolute;
+        bottom: 5%;
+        right: -47%;
+        content: '';
+        background: transparent
+          url(https://static1.squarespace.com/static/60bf9806d24c362bafe3faf5/t/60e8ac279a0fc52ea427b148/1625861159940/heroBlob.svg)
+          bottom left no-repeat;
+        background-size: contain;
+        width: 142.384033613%;
+        max-width: 1960px;
+        height: 200%;
+        pointer-events: none;
+      }
+    }
+
+    @include desktop {
+		figcaption {
+		  width: 40%;
+		  padding: 0 10px;
+		  h1 {
+			font-size: 36px;
+			line-height: initial;
+		  }
+		  em {
+			font-size: 22px;
+		  }
+		  p {
+			font-size: 18px;
+		  }
+		  button {
+			font-size: 18px;
+			padding: 16px;
+		  }
+		}
+		.image-container {
+		  width: 60%;
+		}
+	  }
+
+    @include tablet {
+      flex-direction: column-reverse;
+      figcaption {
+        width: 100%;
+        h1 {
+          font-size: 32px;
+        }
+        p {
+          font-size: 18px;
+        }
+        button {
+          font-size: 18px;
+          padding: 12px;
+        }
+      }
+      .image-container {
+        width: 100%;
+      }
+    }
+
+    @include mobile {
+      figcaption {
+        h1 {
+          font-size: 26px;
+        }
+        em {
+          font-size: 16px;
+        }
+        p {
+          font-size: 12px;
+        }
+        button {
+          font-size: 12px;
+          padding: 10px;
+        }
+      }
+    }
+  }
+}

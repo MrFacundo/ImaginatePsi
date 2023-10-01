@@ -75,29 +75,15 @@ strong {
   color: $black;
 }
 
-.emoji {
-  display: inline-block;
-  vertical-align: text-top;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 .section {
   display: flex;
   justify-content: center;
-  padding: 100px 170px 100px 100px;
-  @include thirteen {
-    padding: 100px;
-  }
-  @include desktop {
-    padding: 50px;
-  }
+  padding: 0 50px;
   @include tablet {
     display: block;
   }
   @include mobile {
-    padding: 50px 35px;
+    padding: 0 40px 0 20px;
   }
   &__title {
     flex-shrink: 0;
