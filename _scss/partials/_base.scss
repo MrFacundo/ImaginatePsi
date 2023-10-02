@@ -35,7 +35,8 @@ body {
     strong,
     .intro,
     .team .team__category__label,
-    .experience .job__time, .job__company,
+    .experience .job__time,
+    .job__company,
     .footer__copyright,
     .status {
       color: $off-white;
@@ -46,7 +47,8 @@ body {
   }
 }
 
-a, span {
+a,
+span {
   @include transition;
   text-decoration: none;
   font-weight: 700;
@@ -79,11 +81,12 @@ strong {
   display: flex;
   justify-content: center;
   padding: 0 50px;
+  position: relative;
   @include tablet {
     display: block;
   }
   @include mobile {
-    padding: 0 40px 0 20px;
+    padding: 0 20px;
   }
   &__title {
     flex-shrink: 0;
@@ -146,6 +149,24 @@ strong {
           transform: translateY(-2px);
         }
       }
+    }
+  }
+
+  &__background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    pointer-events: none;
+    img {
+      display: block;
+      object-position: 51.040312093628096% 100%;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      overflow: clip;
     }
   }
 }

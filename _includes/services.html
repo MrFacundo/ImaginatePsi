@@ -1,0 +1,38 @@
+<section class="section services">
+	<div class="section__background">
+		<img
+			src="https://images.squarespace-cdn.com/content/v1/60bf9806d24c362bafe3faf5/b4992ccb-b954-4315-9741-ac93e66ffcea/Home+BG+2.png" />
+	</div>
+	<div class="services__cards">
+		<div class="services__title">
+			<p>
+				<strong>
+					Nos especializamos en
+				</strong>
+			</p>
+		</div>
+		<ul>
+			{% for card in site.data.service-cards %}
+			<li>
+				{% include _figure.html picName=card.image %}
+				<h2>{{ card.title }}</h2>
+			</li>
+			{% endfor %}
+		</ul>
+	</div>
+	<div class="services__title">
+		<p>
+			Algunos motivos que conducen a la consulta:
+		</p>
+	</div>
+	<div class="services__content">
+		{% for content in site.data.service-content %}
+		<figure>
+			{% include _figure.html picName=content.image %}
+			<figcaption>
+				<p>{{ content.text }}</p>
+			</figcaption>
+		</figure>
+		{% endfor %}
+	</div>
+</section>

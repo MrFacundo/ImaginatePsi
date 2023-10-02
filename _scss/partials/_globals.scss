@@ -4,6 +4,7 @@ $orange: #fdc89d;
 $ligth-pink: #FEF6F1;
 $taupe: #433d32;
 $sienna: #d58d4d;
+$soapstone: #fff8f4;
 
 $night: #171c28;
 $black: #36363c;
@@ -89,4 +90,20 @@ $tiny-mobile-width: 330px;
   @media screen and (max-width: #{$tiny-mobile-width}) {
     @content;
   }
+}
+
+// other mixins
+
+@mixin custom-before {
+  display: block;
+  position: absolute;
+  content: '';
+  background-size: contain;
+  z-index: 1;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

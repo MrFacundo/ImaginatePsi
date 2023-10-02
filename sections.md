@@ -29,9 +29,9 @@ Consultas wup y mail
 
 # Services
 ¿En qué nos especializamos?: Tratamientos con Adolescentes, jóvenes, adultos, familia y
-orientación a padres. Algunos motivos que conducen a la consulta:
+**orientación a padres**. Algunos motivos que conducen a la consulta:
 
-Cuando tenés un problema que, por más vueltas que le des, no podés resolverlo solo. Ya le preguntaste a tu amigo, al médico, a distintas personas y el problema sigue estando.
+Cuando tenés un problema que, por más vueltas que le des, no podés resolverlo solo. Ya **le** preguntaste a tu amigo, al médico, a distintas personas y el problema sigue estando.
 
 Si no podés focalizar una idea y no te podes concentrar porque estás disperso, quizás estás en un momento de ansiedad.
 
@@ -41,7 +41,7 @@ Si te sentís solo o te aislás.
 
 Cuando se te presentan ideas que no te permiten accionar y hacer lo que querés y terminás congelado, a veces son obsesiones que no te dejan avanzar.
 
-Cuando estás todo el tiempo enojado e irritado y no sabes por qué.
+**Cuando estás todo el tiempo enojado e irritado y no sabes por qué.**
 
 Ese es el momento de consultarnos.
 
