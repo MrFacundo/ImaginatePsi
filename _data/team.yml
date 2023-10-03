@@ -1,5 +1,8 @@
-- name: Lic. Cristina del Castillo Patricia Valdez
-  img: foot11/foot11_mobile
+- name: Lic. Cristina del Castillo 
+  image: team1
+  university: Universidad Autónoma de Baja California
 
-- name: Lic. Cristina del Castillo Patricia Valdez
-  img: foot11/foot11_mobile
+- name: Patricia Valdez
+  image: team2
+  university: UBA
+

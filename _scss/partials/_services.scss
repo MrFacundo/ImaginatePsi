@@ -6,7 +6,8 @@
   }
   &__cards,
   &__content {
-    margin-bottom: 50px;
+    max-width: 100%;
+    margin-bottom: 0;
     z-index: 10;
   }
   ul {
@@ -20,6 +21,8 @@
       width: 360px;
       margin: 0 40px;
       text-align: center;
+      z-index: 13;
+      position: relative;
     }
   }
   &__title {
@@ -30,9 +33,8 @@
 
       font-weight: 700;
       position: relative;
+      font-size: 38px;
       strong {
-        font-size: 38px;
-
         position: relative;
         &::before {
           @include custom-before;
@@ -86,30 +88,57 @@
       }
     }
   }
+  @include thirteen {
+    ul {
+      li {
+        padding: 20px 30px;
+        margin: 0 30px;
+      }
+      h2 {
+        font-size: 22px;
+      }
+    }
+  }
+
+  @include desktop {
+    ul {
+      li {
+        padding: 20px;
+        margin: 0 15px;
+      }
+      h2 {
+        font-size: 18px;
+      }
+    }
+  }
+
+  @include tablet {
+    ul {
+      li {
+        margin: 0 5px;
+      }
+    }
+  }
   @include mobile {
     .services__title {
       p {
-        font-size: 24px;
+        font-size: 22px;
       }
     }
     ul {
-      position: relative;
+      justify-content: space-evenly;
       flex-wrap: wrap;
-
       li {
         padding: 10px;
         width: 150px;
         margin: 5px;
-      }
-      h2 {
-        font-size: 18px;
       }
     }
     .services__content {
       width: 100%;
       figure {
         padding: 0;
-        margin: 20px;
+        margin-bottom: 0;
         flex-direction: column;
         picture,
         figcaption {

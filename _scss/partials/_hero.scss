@@ -1,17 +1,17 @@
 .hero {
-  background: $ligth-pink;
-  height: 100vh;
-  overflow-x: hidden;
-
+  min-height: 100vh;
+  overflow: hidden;
   figure {
+    align-self: center;
+    margin-top: 5%;
     display: flex;
     justify-content: space-between;
     position: relative;
-    margin: 0;
-    place-self: end;
 
     figcaption {
       @include flex-center;
+      align-items: inherit;
+      flex-direction: column;
       width: 50%;
       min-height: 100%;
       position: relative;
@@ -27,9 +27,19 @@
         font-weight: 300;
       }
       p {
+        font-style: italic;
         font-size: 26px;
       }
+      .quote__author {
+        font-weight: 300;
+        text-align: end;
+        font-size: 20px;
+      }
       button {
+        margin-top: 10%;
+        width: fit-content;
+        place-self: center;
+
         background: $orange;
         color: $white;
         padding: 20px;
@@ -95,9 +105,11 @@
     }
 
     @include tablet {
+      margin: 5% 5% 0 5%;
       flex-direction: column-reverse;
       figcaption {
         width: 100%;
+
         h1 {
           font-size: 32px;
         }
@@ -107,6 +119,7 @@
         button {
           font-size: 18px;
           padding: 12px;
+          margin-top: 5%;
         }
       }
       .image-container {
@@ -116,17 +129,25 @@
     }
 
     @include mobile {
+      margin: 15% 5% 0 5%;
       figcaption {
         h1 {
+          margin: 12px 0;
           font-size: 26px;
         }
         em {
           font-size: 16px;
         }
         p {
-          font-size: 12px;
+          margin: 12px 0;
+          font-size: 16px;
+        }
+        .quote__author {
+          margin: 0;
+          font-size: 14px;
         }
         button {
+          margin-top: 30px;
           font-size: 12px;
           padding: 10px;
         }

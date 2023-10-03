@@ -1,23 +1,52 @@
 .team {
-    display: flex;
-    justify-content: space-between;
-    @include weird-medium {
-      flex-wrap: wrap;
+  .section__background {
+    img {
+      object-fit: fill;
     }
-    &__category {
-      @include weird-medium {
-        width: 47%;
-        margin-right: 5px;
-        margin-bottom: 25px;
+  }
+  &__content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    padding-top: 50px;
+
+    p {
+      font-size: 30px;
+      margin: 0;
+    }
+    ul {
+      @include flex-center;
+      li {
+        max-width: 30%;
+        margin: 0 50px;
+        h2,
+        p {
+          font-weight: 300;
+        }
       }
-      &__label {
+    }
+  }
+  @include mobile {
+    &__content {
+      p {
+        font-size: 22px;
+        margin: 0;
         font-weight: 700;
-        color: $black;
-        text-transform: uppercase;
       }
-      &__item {
-        margin: 3px 0;
-        font-size: 1rem;
+      ul {
+        @include flex-center;
+        align-items: start;
+
+        li {
+          min-width: 45%;
+          min-height: 280px;
+          margin: 0 10px;
+          h2,
+          p {
+            font-size: 16px;
+          }
+        }
       }
     }
+  }
 }

@@ -1,12 +1,25 @@
 <section class="section team">
-  <div class="section__title">team</div>
-  <div class="section__content">
-    <div class="team">
+  <div class="section__background">
+    <img
+      src="https://images.squarespace-cdn.com/content/v1/60bf9806d24c362bafe3faf5/2784adf2-081e-4b75-8f0e-f40a29301b46/Compassionate+Consulting+St+Louis+home+bg.png" />
+  </div>
+  <div class="team__content">
+    <p>El equipo de ImaginatePsi</p>
+    <ul>
       {% for member in site.data.team %}
-      <div class="team__member">
-        <div class="team__member__name">{{ member.name }}</div>
-      </div>
+      <li>
+        {% include _figure.html picName=member.image %}
+        <h2>
+          {{ member.name }}
+        </h2>
+        <p>
+          <strong>
+            {{ member.university }}
+            <br />
+          </strong>
+        </p>
+      </li>
       {% endfor %}
-    </div>
+    </ul>
   </div>
 </section>
