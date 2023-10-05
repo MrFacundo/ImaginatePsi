@@ -5,6 +5,8 @@ description: Imaginate Psi | Atención de la Salud Mental
 url: 
 baseurl: ''
 email: 
+developer: Facundo Troitero
+developer_url: https://mrfacundo.github.io
 cover: https://mrfacundo.github.io/img/og.png
 logo: https://mrfacundo.github.io/img/emojis/technologist.png
 social:

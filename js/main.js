@@ -37,13 +37,13 @@ $(function() {
     reset: false,
     duration: 800,
     origin: 'bottom',
-    distance: '3%',
+    distance: '2%',
     opacity: 0,
     easing: 'cubic-bezier(.694,0,.335,1)',
     viewFactor: 0.3,
   });
   sr.reveal('.hero', { distance: 0 });
-  sr.reveal('.services');
+  sr.reveal('.services', { viewFactor: 0.1 });
   sr.reveal('.team');
   sr.reveal('.about', { viewFactor: 0.2 });
   sr.reveal('.contact', { viewFactor: 0.1 });

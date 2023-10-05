@@ -110,6 +110,7 @@
   }
 
   @include tablet {
+    padding: 0 30px;
     .services__title {
       p {
         margin-top: 0;
@@ -125,14 +126,6 @@
       width: inherit;
     }
     ul {
-      margin-top: 50px;
-      li {
-        margin: 0 5px;
-      }
-    }
-  }
-  @include mobile {
-    ul {
       justify-content: space-evenly;
       flex-wrap: wrap;
       li {
@@ -141,6 +134,10 @@
         margin: 5px;
       }
     }
+  }
+  @include mobile {
+    padding: 0 20px;
+
     .services__content {
       width: 100%;
       figure {

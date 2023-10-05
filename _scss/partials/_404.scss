@@ -22,7 +22,7 @@
   }
   a {
     font-weight: 700;
-    color: $blue !important;
+    color: $orange !important;
     position: relative;
     display: inline-block;
     &:after {
@@ -31,7 +31,6 @@
       left: 0;
       width: 100%;
       height: 3px;
-      background: $blue;
       content: '';
       opacity: 0;
       transition: height 0.3s, opacity 0.3s, transform 0.3s;

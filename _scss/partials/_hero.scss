@@ -25,8 +25,8 @@
         display: block;
       }
       h1 {
-          font-size: 50px;
-          font-family: 'Gilda Display', serif;
+        font-size: 50px;
+        font-family: 'Gilda Display', serif;
       }
       em {
         font-size: 32px;
@@ -62,7 +62,7 @@
       }
       &::before {
         @include custom-before;
-        bottom: 5%;
+        bottom: 35%;
         right: -47%;
         background: transparent
           url(https://static1.squarespace.com/static/60bf9806d24c362bafe3faf5/t/60e8ac279a0fc52ea427b148/1625861159940/heroBlob.svg)
@@ -73,14 +73,28 @@
         pointer-events: none;
       }
     }
+    @include fifteen {
+      margin-top: 10%;
+      figcaption {
+        h1 {
+          line-height: 1.2;
+        }
+        em {
+          font-size: 28px;
+        }
+        p {
+          font-size: 22px;
+          margin: 0;
+        }
+      }
+    }
 
     @include desktop {
       figcaption {
-        width: 40%;
+        width: 60%;
         padding: 0 10px;
         h1 {
           font-size: 40px;
-          line-height: initial;
         }
         em {
           font-size: 22px;

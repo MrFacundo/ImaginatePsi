@@ -2,14 +2,18 @@
   <div class="footer__content">
     <div class="footer__copyright">
       <span>
-        {{ site.name }}
+        © {{ site.name }}
       </span> -
       <span>
         2023
       </span>
     </div>
     <div class="footer__developer">
-      <p>Developed by {{ site.developer }}</p>
+      <p>Developed by
+        <a href="{{ site.developer_url }}" target="_blank" title="{{ site.developer }}">
+          {{ site.developer }}
+        </a>
+      </p>
     </div>
     <div class="footer__links">
       {% for link in site.social %}

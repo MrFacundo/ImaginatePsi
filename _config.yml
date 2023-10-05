@@ -5,6 +5,8 @@ description: Imaginate Psi | Atención de la Salud Mental
 url: /
 baseurl: /ImaginatePsi
 email: 
+developer: Facundo Troitero
+developer_url: https://mrfacundo.github.io
 cover: https://mrfacundo.github.io/img/og.png
 logo: https://mrfacundo.github.io/img/emojis/technologist.png
 social:
@@ -15,7 +17,7 @@ social:
     url: https://wa.me/5491130777777
     image: whatsapp
   - title: instagram
-    url: https://www.instagram.com/imaginatepsi/
+    url: https://www.instagram.com/imaginate.psi/
     image: instagram
 
 
