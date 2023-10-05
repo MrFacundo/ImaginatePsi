@@ -1,12 +1,11 @@
 // Colors
 $white: #fff;
 $orange: #fdc89d;
-$ligth-pink: #FEF6F1;
+$ligth-pink: #fef6f1;
 $taupe: #433d32;
 $sienna: #d58d4d;
 $soapstone: #fff8f4;
-$derby: #FFEADC;
-
+$derby: #ffeadc;
 
 $night: #171c28;
 $black: #36363c;
@@ -24,6 +23,7 @@ $accent: #ffcc66;
 $font-stack: 'Source Sans Pro', system, system-ui, -apple-system,
   BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
 $Apercu: 'Apercu', $font-stack;
+$BlackMango: 'BlackMango', $font-stack;
 // Media queries
 $fifteen-inch: 1440px;
 $thirteen-inch: 1280px;
@@ -38,6 +38,12 @@ $tiny-mobile-width: 330px;
 
 @mixin transition {
   transition: all 0.2s ease-in-out;
+}
+
+@mixin fifteen {
+  @media screen and (max-width: #{$fifteen-inch}) {
+    @content;
+  }
 }
 
 @mixin thirteen {
@@ -109,3 +115,21 @@ $tiny-mobile-width: 330px;
   justify-content: center;
   align-items: center;
 }
+
+@mixin section-title {
+  font-family: 'Gilda Display', serif;
+  font-size: 44px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 100px;
+  @include desktop {
+    font-size: 36px;
+  }
+  @include tablet {
+    margin-top: 50px;
+  }
+  @include mobile {
+    font-size: 22px;
+  }
+}
+

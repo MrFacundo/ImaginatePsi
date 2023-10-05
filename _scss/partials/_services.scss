@@ -4,14 +4,15 @@
   .section__background img {
     object-position: 50% 50%;
   }
-  &__cards,
-  &__content {
+  &__cards {
     max-width: 100%;
     margin-bottom: 0;
     z-index: 10;
   }
   ul {
     @include flex-center;
+    margin-top: 72px;
+
     li {
       padding: 30px 50px;
       border-radius: 50px;
@@ -21,7 +22,7 @@
       width: 360px;
       margin: 0 40px;
       text-align: center;
-      z-index: 13;
+      z-index: 10;
       position: relative;
     }
   }
@@ -29,11 +30,8 @@
     text-align: center;
     p {
       z-index: 5;
-      font-size: 30px;
-
-      font-weight: 700;
+      @include section-title;
       position: relative;
-      font-size: 38px;
       strong {
         position: relative;
         &::before {
@@ -55,7 +53,7 @@
     width: 80%;
     background: $ligth-pink;
     border-radius: 50px;
-    margin-top: 20px;
+    margin-bottom: 50px;
 
     figure {
       @include flex-center;
@@ -75,12 +73,11 @@
         object-fit: contain;
       }
       figcaption {
-        width: 60%;
+        width: 55%;
         text-align: left;
 
         p {
           white-space: pre-wrap;
-          font-size: 26px;
         }
       }
       &:nth-child(even) {
@@ -113,18 +110,28 @@
   }
 
   @include tablet {
+    .services__title {
+      p {
+        margin-top: 0;
+      }
+      &.subsection {
+        p {
+          margin-top: 50px;
+        }
+      }
+    }
+    .services__content {
+      margin-bottom: 0;
+      width: inherit;
+    }
     ul {
+      margin-top: 50px;
       li {
         margin: 0 5px;
       }
     }
   }
   @include mobile {
-    .services__title {
-      p {
-        font-size: 22px;
-      }
-    }
     ul {
       justify-content: space-evenly;
       flex-wrap: wrap;
@@ -138,7 +145,7 @@
       width: 100%;
       figure {
         padding: 0;
-        margin-bottom: 0;
+        margin: 0 20px;
         flex-direction: column;
         picture,
         figcaption {

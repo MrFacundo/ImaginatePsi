@@ -4,20 +4,29 @@
       object-fit: fill;
     }
   }
+  &__title {
+    @include section-title;
+    margin-bottom: 10px;
+  }
+
   &__content {
     position: relative;
     z-index: 10;
     text-align: center;
     padding-top: 50px;
 
-    p {
-      font-size: 30px;
-      margin: 0;
-    }
     ul {
       @include flex-center;
+      p,
+      h2 {
+        font-family: $Apercu;
+        font-size: 24px;
+        margin: 0;
+      }
       li {
+        align-self: start;
         max-width: 30%;
+        min-height: 280px;
         margin: 0 50px;
         h2,
         p {
@@ -26,20 +35,24 @@
       }
     }
   }
+  @include tablet {
+    &__content {
+      ul {
+        li {
+          max-width: initial;
+          margin: 0 20px;
+        }
+      }
+    }
+  }
   @include mobile {
     &__content {
-      p {
-        font-size: 22px;
-        margin: 0;
-        font-weight: 700;
-      }
       ul {
         @include flex-center;
         align-items: start;
 
         li {
           min-width: 45%;
-          min-height: 280px;
           margin: 0 10px;
           h2,
           p {

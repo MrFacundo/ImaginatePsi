@@ -1,6 +1,11 @@
 .hero {
   min-height: 100vh;
   overflow: hidden;
+  .section__background {
+    img {
+      object-position: 50% 100%;
+    }
+  }
   figure {
     align-self: center;
     margin-top: 5%;
@@ -20,11 +25,13 @@
         display: block;
       }
       h1 {
-        font-size: 46px;
+          font-size: 50px;
+          font-family: 'Gilda Display', serif;
       }
       em {
         font-size: 32px;
         font-weight: 300;
+        font-family: $Apercu;
       }
       p {
         font-style: italic;
@@ -39,19 +46,6 @@
         margin-top: 10%;
         width: fit-content;
         place-self: center;
-
-        background: $orange;
-        color: $white;
-        padding: 20px;
-        border-radius: 50px;
-        border: none;
-        margin-bottom: 10px;
-        display: inline-block;
-        font-weight: bold;
-        text-transform: uppercase;
-        font-size: 20px;
-        letter-spacing: 0.03em;
-        cursor: pointer;
       }
     }
     .image-container {
@@ -85,7 +79,7 @@
         width: 40%;
         padding: 0 10px;
         h1 {
-          font-size: 36px;
+          font-size: 40px;
           line-height: initial;
         }
         em {

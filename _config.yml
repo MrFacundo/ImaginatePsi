@@ -1,7 +1,8 @@
 # Site settings
-name: Imageinate Psi
+name: Imaginate Psi
 title: Imaginate Psi | Atención de la Salud Mental
 description: Imaginate Psi | Atención de la Salud Mental
+developer: Facundo Troitero
 url: 
 baseurl: ''
 email: 
@@ -10,6 +11,14 @@ logo: https://mrfacundo.github.io/img/emojis/technologist.png
 social:
   - title: email
     url: mailto:fdsadsa
+    image: mail
+  - whatsapp: whatsapp
+    url: https://wa.me/5491130777777
+    image: whatsapp
+  - title: instagram
+    url: https://www.instagram.com/imaginatepsi/
+    image: instagram
+
 
 # Build settings
 markdown: kramdown

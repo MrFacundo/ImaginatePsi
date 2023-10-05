@@ -1,18 +1,22 @@
 <footer class="footer">
-  <div class="footer__copyright">
-    <div class="top">
-      <span>Developed by</span>
+  <div class="footer__content">
+    <div class="footer__copyright">
+      <span>
+        {{ site.name }}
+      </span> -
+      <span>
+        2023
+      </span>
     </div>
-    <div class="bottom">
-      <span>{{ site.name }}</span> -
-      <span>2023</span>
+    <div class="footer__developer">
+      <p>Developed by {{ site.developer }}</p>
     </div>
-  </div>
-  <div class="footer__links">
-    {% for link in site.social %}
-    <a href="{{link.url}}" target="_blank" title="{{link.title}}">
-      <span class="text">{{link.title}}</span>
-    </a>
-    {% endfor %}
+    <div class="footer__links">
+      {% for link in site.social %}
+      <a href="{{link.url}}" target="_blank" title="{{link.title}}">
+        {% include _figure.html picName=link.image %}
+      </a>
+      {% endfor %}
+    </div>
   </div>
 </footer>

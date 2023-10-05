@@ -47,9 +47,7 @@ body {
   }
 }
 
-a,
-span {
-  @include transition;
+a {
   text-decoration: none;
   font-weight: 700;
   color: inherit;
@@ -77,11 +75,38 @@ strong {
   color: $black;
 }
 
+h2 {
+  font-family: 'Gilda Display', serif;
+}
+
+p, span {
+  font-size: 22px;
+  @include tablet {
+    font-size: 18px;
+  }
+}
+
+button {
+  background: $orange;
+  color: $white;
+  padding: 20px;
+  border-radius: 50px;
+  border: none;
+  margin-bottom: 10px;
+  display: inline-block;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+
 .section {
   display: flex;
   justify-content: center;
   padding: 0 50px;
   position: relative;
+  overflow: hidden;
   @include tablet {
     display: block;
   }
@@ -125,31 +150,6 @@ strong {
       margin-top: 0;
       margin-bottom: 25px;
     }
-    .underline-link {
-      position: relative;
-      display: inline-block;
-      &:after {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        height: 1px;
-        background: $black;
-        content: '';
-        opacity: 0;
-        transition: height 0.3s, opacity 0.3s, transform 0.3s;
-        transform: translateY(-5px);
-      }
-      &:hover,
-      &:focus {
-        &:after {
-          height: 2px;
-          border-radius: 3px;
-          opacity: 1;
-          transform: translateY(-2px);
-        }
-      }
-    }
   }
 
   &__background {
@@ -162,46 +162,11 @@ strong {
     pointer-events: none;
     img {
       display: block;
-      object-position: 51.040312093628096% 100%;
       object-fit: cover;
       width: 100%;
       height: 100%;
       overflow: clip;
     }
-  }
-}
-
-.arrow-link {
-  @include transition;
-  font-weight: 700;
-  display: inline-block;
-  background-color: transparent;
-  white-space: nowrap;
-  &:after {
-    @include transition;
-    position: relative;
-    bottom: 2px;
-    margin-left: 15px;
-    content: '';
-    background: url('../img/arrow.png') no-repeat center;
-    background-size: 100%;
-    width: 15px;
-    height: 15px;
-    display: inline-block;
-    vertical-align: middle;
-  }
-  &:hover:after {
-    transform: translateX(7px);
-  }
-}
-
-.small {
-  font-family: 'Inconsolata', monospace;
-  font-size: 0.85rem;
-  display: inline-block;
-  margin-top: 15px;
-  &:after {
-    display: none;
   }
 }
 
