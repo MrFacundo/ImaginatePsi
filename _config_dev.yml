@@ -2,8 +2,8 @@
 name: Imaginate Psi
 title: Imaginate Psi | Atención de la Salud Mental
 description: Imaginate Psi | Atención de la Salud Mental
-url: /
-baseurl: /ImaginatePsi
+url: 
+baseurl: ''
 email: 
 cover: https://mrfacundo.github.io/img/og.png
 logo: https://mrfacundo.github.io/img/emojis/technologist.png
