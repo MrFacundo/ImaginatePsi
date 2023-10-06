@@ -12,7 +12,7 @@ logo: https://mrfacundo.github.io/ImaginatePsi/img/favicon-256x256.png
 social:
   - title: email
     url: mailto:fdsadsa
-    image: mail
+    image: social/mail
   - whatsapp: social/whatsapp
     url: https://wa.me/5491130777777
     image: social/whatsapp
