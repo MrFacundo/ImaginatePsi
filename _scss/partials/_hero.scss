@@ -73,7 +73,9 @@
         pointer-events: none;
       }
     }
-    @include fifteen {
+  }
+  @include fifteen {
+    figure {
       margin-top: 10%;
       figcaption {
         h1 {
@@ -88,8 +90,10 @@
         }
       }
     }
+  }
 
-    @include desktop {
+  @include desktop {
+    figure {
       figcaption {
         width: 60%;
         padding: 0 10px;
@@ -111,8 +115,10 @@
         width: 60%;
       }
     }
+  }
 
-    @include tablet {
+  @include tablet {
+    figure {
       margin: 5% 5% 0 5%;
       flex-direction: column-reverse;
       figcaption {
@@ -135,8 +141,11 @@
         place-self: center;
       }
     }
+  }
 
-    @include mobile {
+  @include mobile {
+    padding: 0;
+    figure {
       margin: 15% 5% 0 5%;
       figcaption {
         h1 {
@@ -161,7 +170,8 @@
         }
       }
       .image-container {
-        width: 90%;
+        text-align: end;
+        place-self: end;
       }
     }
   }

@@ -1,38 +1,36 @@
 $(function() {
-  const d = new Date();
-  const hours = d.getHours();
-  const night = hours >= 19 || hours <= 7; // between 7pm and 7am
-  const body = document.querySelector('body');
-  const toggle = document.getElementById('toggle');
 
-  const prefersDarkMode = () =>
-    window.matchMedia &&
-    window.matchMedia('(prefers-color-scheme: dark)').matches;
+  // Toggle sticky button visibility
+  const introHeight = document.querySelector('.contact').offsetTop;
+  const $ws = $('#whatsapp-button');
 
-  // if (prefersDarkMode() || night) {
-  //   body.classList.add('night');
-  // }
+  window.addEventListener(
+    'scroll',
+    function() {
+      if (window.scrollY > introHeight) {
+        $ws.css('opacity', 0);
+      } else {
+        $ws.css('opacity', 1);
+      }
+    },
+    false
+  );
 
-  const introHeight = document.querySelector('.hero').offsetHeight;
-  // const topButton = document.getElementById('top-button');
-  // const $topButton = $('#top-button');
+  // Toggle mobile menu
+  var $toggleButton = $('#toggle');
+  var $overlay = $('#overlay');
 
-  // window.addEventListener(
-  //   'scroll',
-  //   function() {
-  //     if (window.scrollY > introHeight) {
-  //       $topButton.fadeIn(800);
-  //     } else {
-  //       $topButton.fadeOut(800);
-  //     }
-  //   },
-  //   false
-  // );
+  $toggleButton.click(function() {
+    $toggleButton.toggleClass('active');
+    $overlay.toggleClass('open');
+  });
 
-  // topButton.addEventListener('click', function() {
-  //   $('html, body').animate({ scrollTop: 0 }, 500);
-  // });
+  $overlay.click(function() {
+    $toggleButton.removeClass('active');
+    $overlay.removeClass('open');
+  });
 
+  // ScrollReveal
   window.sr = ScrollReveal({
     reset: false,
     duration: 800,
@@ -44,7 +42,7 @@ $(function() {
   });
   sr.reveal('.hero', { distance: 0 });
   sr.reveal('.services', { viewFactor: 0.1 });
-  sr.reveal('.team');
+  sr.reveal('.team__content');
   sr.reveal('.about', { viewFactor: 0.2 });
   sr.reveal('.contact', { viewFactor: 0.1 });
 });

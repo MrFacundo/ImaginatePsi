@@ -55,7 +55,7 @@ p, span {
 }
 
 button {
-  background: $orange;
+  background: $sienna;
   color: $white;
   padding: 20px;
   border-radius: 50px;
@@ -68,14 +68,14 @@ button {
   letter-spacing: 0.03em;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  outline: none; /* Remove the default outline to avoid double outlines */
+  outline: none; 
 
 
   &:hover {
     transition: all 0.3s ease-in-out;
     background: $soapstone;
-    color: $orange;
-    outline: 2px solid $orange; /* Apply an outline on hover */
+    color: $sienna;
+    outline: 2px solid $sienna; 
   }
 }
 

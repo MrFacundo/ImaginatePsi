@@ -78,4 +78,7 @@
       display: none;
     }
   }
+  @include mobile {
+    padding: 16px 20px;
+  }
 }

@@ -8,17 +8,17 @@ email:
 developer: Facundo Troitero
 developer_url: https://mrfacundo.github.io
 cover: https://mrfacundo.github.io/img/og.png
-logo: https://mrfacundo.github.io/img/emojis/technologist.png
+logo: https://mrfacundo.github.io/ImaginatePsi/img/favicon-256x256.png
 social:
   - title: email
     url: mailto:fdsadsa
     image: mail
-  - whatsapp: whatsapp
+  - whatsapp: social/whatsapp
     url: https://wa.me/5491130777777
-    image: whatsapp
+    image: social/whatsapp
   - title: instagram
     url: https://www.instagram.com/imaginate.psi/
-    image: instagram
+    image: social/instagram
 
 
 # Build settings
