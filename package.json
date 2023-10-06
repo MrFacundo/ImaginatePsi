@@ -1,12 +1,12 @@
 {
-  "name": "mrfacundo.github.io",
+  "name": "imaginate_psi",
   "version": "0.0.0",
-  "description": "Front-end web developer building engaging digital experiences",
+  "description": "Jekyll website for Imaginate.Psi",
   "repository": {
     "type": "git",
-    "url": "https://github.com/MrFacundo/mrfacundo.github.io"
+    "url": "https://github.com/MrFacundo/ImaginatePsi"
   },
-  "homepage": "https://github.com/MrFacundo/mrfacundo.github.io",
+  "homepage": "https://github.com/MrFacundo/ImaginatePsi",
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp serve --watch",

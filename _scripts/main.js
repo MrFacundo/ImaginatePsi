@@ -1,13 +1,13 @@
 $(function() {
 
   // Toggle sticky button visibility
-  const introHeight = document.querySelector('.contact').offsetTop;
+  const contactHeight = document.querySelector('.contact').offsetTop;
   const $ws = $('#whatsapp-button');
 
   window.addEventListener(
     'scroll',
     function() {
-      if (window.scrollY > introHeight) {
+      if (window.scrollY > contactHeight) {
         $ws.css('opacity', 0);
       } else {
         $ws.css('opacity', 1);
