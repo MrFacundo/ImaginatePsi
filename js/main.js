@@ -1,20 +1,20 @@
 $(function() {
+  // Toggle fixed button visibility
+  const footer = document.querySelector('.footer');
+  const fixedButton = document.getElementById('whatsapp-button');
 
-  // Toggle sticky button visibility
-  const introHeight = document.querySelector('.contact').offsetTop;
-  const $ws = $('#whatsapp-button');
-
-  window.addEventListener(
-    'scroll',
-    function() {
-      if (window.scrollY > introHeight) {
-        $ws.css('opacity', 0);
+  const callback = (entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        fixedButton.style.opacity = 0;
       } else {
-        $ws.css('opacity', 1);
+        fixedButton.style.opacity = 1;
       }
-    },
-    false
-  );
+    });
+  };
+
+  const observer = new IntersectionObserver(callback);
+  observer.observe(footer);
 
   // Toggle mobile menu
   var $toggleButton = $('#toggle');

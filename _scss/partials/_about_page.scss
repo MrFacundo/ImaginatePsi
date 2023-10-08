@@ -1,0 +1,40 @@
+.about-page {
+  h2 {
+    @include section-title;
+    position: absolute;
+    top: 300px;
+    color: white;
+    left: 36%;
+    margin-top: 0;
+  }
+  .navbar {
+    position: relative;
+  }
+  .section {
+    min-height: 100vh;
+  }
+  .content {
+    width: 70%;
+	margin: 0 auto;
+    margin-top: 50px;
+    p {
+      text-align: justify;
+    }
+  }
+  .image-container {
+    img {
+      height: 450px;
+      object-fit: cover;
+      width: 100%;
+      object-position: 0% 70%;
+    }
+  }
+  @include tablet {
+	h2 {
+		font-size: 26px;
+	}
+    .content {
+      width: 90%;
+    }
+  }
+}
