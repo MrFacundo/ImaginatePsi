@@ -33,6 +33,9 @@
       height: 400px;
       display: flex;
       justify-content: space-evenly;
+      h2 {
+        font-size:36px;
+      }
     }
 
     .grid-container {
@@ -56,6 +59,9 @@
 
     .column2 {
       text-align: left;
+      a {
+        font-weight: normal;
+      }
     }
   }
   &__description {

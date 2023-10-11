@@ -43,6 +43,6 @@ $(function() {
   sr.reveal('.hero', { distance: 0 });
   sr.reveal('.services', { viewFactor: 0.1 });
   sr.reveal('.team__content');
-  sr.reveal('.about', { viewFactor: 0.2 });
+  sr.reveal('.about__content', { viewFactor: 0.2 });
   sr.reveal('.contact', { viewFactor: 0.1 });
 });
