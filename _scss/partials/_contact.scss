@@ -34,31 +34,40 @@
       display: flex;
       justify-content: space-evenly;
       h2 {
-        font-size:36px;
+        font-size: 36px;
       }
     }
 
     .grid-container {
-      align-content: center;
       display: grid;
       grid-template-columns: auto 1fr;
       column-gap: 20px;
-      p {
-        margin-bottom: 50px;
-        &:last-child {
-          margin-bottom: 20px;
+
+      .column1 {
+        font-weight: bold;
+        text-align: right;
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+      }
+
+      .column2 {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        p {
+          font-size: 16px;
         }
       }
-    }
+      p {
+        height: 80px;
+        margin: 0;
+      }
 
-    .column1 {
-      font-weight: bold;
-      text-align: right;
-      text-transform: uppercase;
-    }
-
-    .column2 {
-      text-align: left;
       a {
         font-weight: normal;
       }

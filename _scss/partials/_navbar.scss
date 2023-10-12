@@ -1,9 +1,9 @@
 .navbar {
   background: none;
   position: absolute;
-  z-index: 2;
+  z-index: 5;
   width: 100%;
-  padding: 20px 100px;
+  padding: 20px 80px;
   pointer-events: auto;
   &__content {
     position: relative;
@@ -23,15 +23,15 @@
     flex-shrink: 0;
     backface-visibility: hidden;
     img {
-      width: 200px;
-      height: 120px;
+      width: 300px;
+      height: 180px;
       object-fit: cover;
     }
   }
   nav {
     margin-right: auto;
     justify-content: end;
-
+    margin-top: -60px;
     align-items: center;
     flex-grow: 1;
     flex-shrink: 1;
@@ -55,6 +55,26 @@
     }
   }
 
+  @include fifteen {
+    .navbar__logo {
+      img {
+        width: 260px;
+        height: 150px;
+      }
+    }
+  }
+  @include thirteen {
+    .navbar__logo {
+      img {
+        width: 200px;
+        height: 110px;
+      }
+    }
+    nav {
+      flex-wrap: nowrap;
+      margin-top: initial;
+    }
+  }
   @include desktop {
     padding: 20px 40px;
 

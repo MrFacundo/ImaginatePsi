@@ -96,7 +96,7 @@ $tiny-mobile-width: 330px;
   position: absolute;
   content: '';
   background-size: contain;
-  z-index: 1;
+  z-index: 0;
 }
 
 @mixin flex-center {
