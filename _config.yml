@@ -7,8 +7,8 @@ baseurl: ''
 email: 
 developer: Facundo Troitero
 developer_url: https://mrfacundo.github.io
-cover: /img/og.png
-logo: /img/favicon-512x512.png
+cover: https://imaginatepsi.com.ar/img/og.png
+logo: https://imaginatepsi.com.ar/img/favicon-512x512.png
 social:
   - title: email
     url: mailto:imaginatepsi@gmail.com
