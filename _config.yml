@@ -7,14 +7,14 @@ baseurl: ''
 email: 
 developer: Facundo Troitero
 developer_url: https://mrfacundo.github.io
-cover: https://mrfacundo.github.io/img/og.png
-logo: https://mrfacundo.github.io/ImaginatePsi/img/favicon-512x512.png
+cover: /img/og.png
+logo: /img/favicon-512x512.png
 social:
   - title: email
-    url: mailto:fdsadsa
+    url: mailto:imaginatepsi@gmail.com
     image: social/mail
-  - whatsapp: social/whatsapp
-    url: https://wa.me/005491162572790
+  - title: whatsapp
+    url: https://wa.me/5491162572790
     image: social/whatsapp
   - title: instagram
     url: https://www.instagram.com/imaginate.psi/

@@ -1,5 +1,6 @@
 <button class="whatsapp" id="whatsapp-button">
-	<a target="_blank" aria-label="Chat on WhatsApp" href="https://wa.me/005491162572790">
+	{% assign whatsapp_social = site.social | where: "title", "whatsapp" | first %}
+	<a target="_blank" aria-label="Chat on WhatsApp" href="{{ whatsapp_social.url }}" title="WhatsApp">
 		{% include _figure.html picName="social/whatsapp" %}
-	<a />
+		<a />
 </button>

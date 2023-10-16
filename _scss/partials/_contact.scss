@@ -60,7 +60,7 @@
         justify-content: space-between;
         align-items: flex-start;
         p {
-          font-size: 16px;
+          font-size: 22px;
         }
       }
       p {
@@ -114,6 +114,14 @@
     .image-container {
       &.mobile {
         width: 70%;
+      }
+    }
+
+    .grid-container {
+      .column2 {
+        p {
+          font-size: 16px;
+        }
       }
     }
   }
