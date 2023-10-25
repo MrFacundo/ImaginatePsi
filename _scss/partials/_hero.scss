@@ -28,23 +28,23 @@
       }
       h1 {
         font-size: 56px;
-        font-family: $Apercu;
+        font-family: 'Gilda Display', serif;
         margin-bottom: 80px;
       }
-      em {
-        font-size: 36px;
-        font-weight: 300;
-        font-family: $Apercu;
-      }
-      p {
-        font-style: italic;
-        font-size: 26px;
-      }
-      .quote__author {
-        font-weight: 300;
-        text-align: end;
-        font-size: 20px;
-      }
+    }
+    em {
+      font-size: 36px;
+      font-weight: 300;
+      font-family: $Apercu;
+    }
+    p {
+      font-style: italic;
+      font-size: 26px;
+    }
+    .quote__author {
+      font-weight: 300;
+      text-align: end;
+      font-size: 20px;
     }
     button {
       margin-top: 3%;

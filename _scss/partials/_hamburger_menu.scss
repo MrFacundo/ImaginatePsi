@@ -92,7 +92,7 @@ $button-width: 35px;
   nav {
     position: relative;
     height: 70%;
-    top: 45%;
+    top: 40%;
     transform: translateY(-50%);
     font-size: 36px;
     font-family: 'Varela Round', serif;
@@ -108,7 +108,7 @@ $button-width: 35px;
     height: 100%;
 
     li {
-      display: block;
+      @include flex-center;
       height: 25%;
       height: calc(100% / 4);
       min-height: 50px;

@@ -106,7 +106,7 @@ $tiny-mobile-width: 330px;
 }
 
 @mixin section-title {
-  font-family: $Apercu;
+  font-family: 'Gilda Display', serif;
   font-size: 44px;
   font-weight: 700;
   text-align: center;
@@ -123,6 +123,4 @@ $tiny-mobile-width: 330px;
 }
 
 @mixin underline {
-  
 }
-

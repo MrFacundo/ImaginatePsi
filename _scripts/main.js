@@ -44,5 +44,6 @@ $(function() {
   sr.reveal('.services', { viewFactor: 0.1 });
   sr.reveal('.team__content');
   sr.reveal('.about__content', { viewFactor: 0.2 });
+  sr.reveal('.about__2 .wrapper', { delay:250, interval: 500  });
   sr.reveal('.contact', { viewFactor: 0.1 });
 });
