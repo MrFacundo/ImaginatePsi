@@ -1,14 +1,14 @@
 - title: Adolescentes
-  image: adolescentes
+  image: services_cards/adol
 
 - title: Jóvenes y adultos
-  image: adultos
+  image: services_cards/adult
 
 - title: Familias
-  image: familia
+  image: services_cards/fam
 
 - title: Orientación a padres
-  image: orientacion-a-padres
+  image: services_cards/padr
 
 
 
