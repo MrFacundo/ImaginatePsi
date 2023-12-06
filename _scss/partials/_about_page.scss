@@ -1,5 +1,5 @@
 .about-page {
-  h2 {
+  h2.page-title {
     @include section-title;
     position: absolute;
     top: 300px;
@@ -11,7 +11,11 @@
     position: relative;
   }
   .section {
-    min-height: 100vh;
+    flex-direction: column;
+    @include flex-center;
+    &.navigation {
+      height: 500px;
+    }
   }
   .content {
     width: 70%;
@@ -57,6 +61,10 @@
   @include mobile {
     .content {
       width: 90%;
+    }
+
+    .section.navigation {
+      height: 200px;
     }
   }
 }

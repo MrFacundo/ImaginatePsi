@@ -7,6 +7,9 @@
       object-position: 50% 100%;
     }
   }
+  a {
+    align-self: center;
+  }
   figure {
     align-self: center;
     margin-top: 8%;
@@ -49,7 +52,6 @@
     button {
       margin-top: 3%;
       width: fit-content;
-      place-self: center;
     }
   }
   .image-container {

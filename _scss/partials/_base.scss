@@ -35,6 +35,16 @@ a {
     transition: all 0.3s ease-in-out;
     color: $sienna;
   }
+  &.read-more-link {
+    font-size: 24px;
+    color: $orange;
+    &:hover {
+      color: $sienna;
+    }
+    @include mobile {
+      font-size: 18px;
+    }
+  }
 }
 
 ul {
@@ -48,7 +58,8 @@ img {
   vertical-align: middle;
 }
 
-h2 {
+h2,
+h1 {
   font-family: 'Gilda Display', serif;
 }
 

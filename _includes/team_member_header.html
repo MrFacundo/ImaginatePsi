@@ -1,0 +1,10 @@
+<section class="team_member__header">
+	{% assign member = site.data.team | where: "slug", include.team_member | first %}
+	{% include _figure.html picName=member.image %}
+	<div class="team_member__info">
+		<h1>{{ member.name }}</h1>
+		<p>{{ member.degree }}</p>
+		<p>{{ member.degree2 }}</p>
+		<p>{{ member.speciality }}</p>
+	</div>
+</section>

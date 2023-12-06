@@ -21,9 +21,6 @@
     p {
       text-align: justify;
     }
-    span {
-      color: $orange;
-    }
   }
   &__2 {
     z-index: 10;
@@ -41,6 +38,11 @@
         p:nth-child(2) {
           margin-top: 0;
         }
+      }
+      picture {
+        width: 300px;
+        place-self: center;
+        height: 230px;
       }
     }
     .vl {

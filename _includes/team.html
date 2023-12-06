@@ -9,14 +9,18 @@
       <li>
         {% include _figure.html picName=member.image %}
         <h2>
+          <strong>
           {{ member.name }}
+          </strong>
         </h2>
         <p>
-          <strong>
-            {{ member.university }}
+            {{ member.degree }}
             <br />
-          </strong>
+            {{ member.degree2 }}
+            <br />
+            {{ member.speciality }}
         </p>
+        <a class="read-more-link" href={{member.url}}>Leer más...</a>
       </li>
       {% endfor %}
     </ul>

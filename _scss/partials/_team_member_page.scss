@@ -1,0 +1,55 @@
+.team-page {
+  .navbar {
+    position: relative;
+  }
+  .team_member__header {
+    @include flex-center;
+    font-weight: bold;
+
+    margin: 0 auto;
+    width: 80%;
+    h1 {
+      @include section-title;
+    }
+    picture {
+      margin-right: 10%;
+      max-width: 40%;
+    }
+
+    .team_member__info {
+      align-self: start;
+      margin-top: 30px;
+    }
+  }
+  .team_member__description {
+    justify-content: center;
+    width: 70%;
+    margin: 0 auto;
+
+    .subtitle {
+      font-weight: bold;
+    }
+    span.year {
+      font-style: italic;
+    }
+  }
+  .section {
+    padding: 50px 0;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  @include mobile {
+    .team_member__header {
+      flex-direction: column;
+      picture {
+        max-width: initial;
+      }
+    }
+
+
+    .team_member__description {
+      width: 80%;
+    }
+  }
+}
