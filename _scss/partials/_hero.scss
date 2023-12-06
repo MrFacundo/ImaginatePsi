@@ -1,5 +1,5 @@
 .hero {
-  min-height: 100vh;
+  height: 100vh;
   overflow: hidden;
   justify-content: start;
   .section__background {
@@ -11,6 +11,7 @@
     align-self: center;
   }
   figure {
+    height: 70%;
     align-self: center;
     margin-top: 8%;
     display: flex;
@@ -24,7 +25,6 @@
       @include flex-center;
       align-items: inherit;
       flex-direction: column;
-      min-height: 100%;
       position: relative;
       div:first-child {
         display: block;
@@ -105,7 +105,6 @@
       margin: 12% 0;
       figcaption {
         line-height: 1.3;
-        padding: 0 10px;
         h1 {
           font-size: 40px;
         }
@@ -131,7 +130,6 @@
     figure {
       width: initial;
       margin: 20% 0 0 0;
-      flex-direction: column;
       figcaption {
         width: 100%;
         h1 {
@@ -166,7 +164,7 @@
   @include mobile {
     padding: 0;
     figure {
-      margin: 35% 5% 0 5%;
+      margin: 40% 10% 0 10%;
       figcaption {
         h1 {
           margin: 12px 0;

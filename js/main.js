@@ -41,7 +41,7 @@ $(function() {
     viewFactor: 0.3,
   });
   sr.reveal('.hero', { distance: 0 });
-  sr.reveal('.services', { viewFactor: 0.1 });
+  sr.reveal('.services', { viewFactor: 0 });
   sr.reveal('.team__content');
   sr.reveal('.about__content', { viewFactor: 0.2 });
   sr.reveal('.about__2 .wrapper', { delay:250, interval: 500  });
