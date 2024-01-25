@@ -21,7 +21,7 @@
       h2 {
         font-family: $Apercu;
         font-size: 24px;
-        margin: 0;
+        margin: 20px 0 0 0;
       }
       li {
         align-self: start;
@@ -32,6 +32,10 @@
         p {
           font-weight: 300;
         }
+        img {
+          border-radius: 3%;
+          box-shadow: rgb(213, 141, 77, 0.2) 0px 48px 100px 0px;
+        }
       }
     }
   }
@@ -40,7 +44,7 @@
       ul {
         li {
           max-width: initial;
-          margin: 0 20px;
+          margin: 0 10px 40px 10px
         }
       }
     }
@@ -52,11 +56,11 @@
         align-items: start;
         flex-direction: column;
 
-
         li {
           min-width: 45%;
-          margin: 0 10px;
-          h2,
+          h2 {
+            font-size: 20px;
+          }
           p {
             font-size: 18px;
           }

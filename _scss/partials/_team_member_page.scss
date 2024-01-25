@@ -7,18 +7,24 @@
     font-weight: bold;
 
     margin: 0 auto;
-    width: 80%;
+    width: 70%;
     h1 {
       @include section-title;
+      margin-top: 0;
     }
     picture {
-      margin-right: 10%;
-      max-width: 40%;
-    }
+      margin-right: 5%;
+      width: 90%;
+      img {
+        border-radius: 3%;
+        box-shadow: rgb(213, 141, 77, 0.2) 0px 48px 100px 0px;
 
+      }
+      
+    }
     .team_member__info {
       align-self: start;
-      margin-top: 30px;
+      max-width: 40%;
     }
   }
   .team_member__description {
@@ -26,7 +32,7 @@
     width: 70%;
     margin: 0 auto;
     text-align: justify;
-
+    margin-top: 50px;
     .subtitle {
       font-weight: bold;
     }
@@ -43,8 +49,12 @@
   @include mobile {
     .team_member__header {
       flex-direction: column;
+      h1 {
+        margin-top: 20px;
+      }
       picture {
-        max-width: initial;
+        width: 120%;
+      margin: 0;
       }
     }
 
