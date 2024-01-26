@@ -5,8 +5,7 @@
     }
   }
   &__title {
-    @include section-title;
-    margin-bottom: 10px;
+    @include section-title--underlined;
   }
 
   &__content {
@@ -25,9 +24,10 @@
       }
       li {
         align-self: start;
-        max-width: 30%;
+        max-width: 40%;
         min-height: 280px;
         margin: 0 50px;
+        flex: 1;
         h2,
         p {
           font-weight: 300;
@@ -44,7 +44,7 @@
       ul {
         li {
           max-width: initial;
-          margin: 0 10px 40px 10px
+          margin: 0 10px 40px 10px;
         }
       }
     }

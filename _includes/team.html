@@ -1,24 +1,30 @@
 <section class="section team" id="team">
   <div class="section__background">
-		{% include _figure.html alt="project" picName="bg/team" %}
+    {% include _figure.html alt="project" picName="bg/team" %}
   </div>
   <div class="team__content">
-    <p class="team__title">Directoras</p>
+    <div class="team__title">
+      <p>
+        <strong>
+          Directoras
+        </strong>
+      </p>
+    </div>
     <ul>
       {% for member in site.data.team %}
       <li>
         {% include _figure.html picName=member.image %}
         <h2>
           <strong>
-          {{ member.name }}
+            {{ member.name }}
           </strong>
         </h2>
         <p>
-            {{ member.degree }}
-            <br />
-            {{ member.degree2 }}
-            <br />
-            {{ member.specialization }}
+          {{ member.degree }}
+          <br />
+          {{ member.degree2 }}
+          <br />
+          {{ member.specialization }}
         </p>
         <a class="read-more-link" href={{member.url}}>Leer más...</a>
       </li>
