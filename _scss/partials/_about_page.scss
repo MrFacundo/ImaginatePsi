@@ -2,7 +2,7 @@
   h2.page-title {
     @include section-title;
     position: absolute;
-    top: 215px;
+    top: 350px;
     color: $soapstone;
     left: 36%;
     margin-top: 0;
@@ -32,9 +32,11 @@
       top: 0;
       left: 0;
       background: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0) 0%,
-        rgba(0, 0, 0, 0.4962359943977591) 70%
+        180deg,
+        rgba(157, 157, 157, 0.3519608527004552) 10%,
+        rgba(0, 0, 0, 0.4) 40%,
+        rgba(0, 0, 0, 0.4) 60%,
+        rgba(157, 157, 157, 0.31834740732230393) 90%
       );
       width: 100%;
       height: 100%;
@@ -47,7 +49,7 @@
     }
   }
   @include tablet {
-    h2 {
+    h2.page-title {
       margin-right: 30px;
       top: 250px;
       text-align: right;
@@ -62,9 +64,16 @@
     .content {
       width: 90%;
     }
-
+    h2.page-title {
+      top: 330px;
+    }
     .section.navigation {
       height: 200px;
+    }
+    .image-container {
+      img {
+        object-position: 25% 50%;
+      }
     }
   }
 }
