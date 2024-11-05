@@ -3,7 +3,8 @@
 	<img alt="GitHub top language" src="https://img.shields.io/github/languages/top/MrFacundo/ImaginatePsi?color=blue" />
 	<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/MrFacundo/ImaginatePsi?color=green" />
 </p>
-[![Netlify Status](https://api.netlify.com/api/v1/badges/083afe47-9e8c-4b28-a406-81b53d95f773/deploy-status)](https://app.netlify.com/sites/lisboaemtango/deploys)
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/fadace53-435d-490c-9f81-f61c9ddb0ff6/deploy-status)](https://app.netlify.com/sites/imaginatepsi/deploys)
 
 ### <em>Imaginate Psi</em> is a single page landing page built on Jekyll
 
